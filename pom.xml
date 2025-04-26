@@ -66,9 +66,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
-                    <systemPropertyVariable>
+                    <systemPropertyVariables>
                         <browser>chrome</browser>
-                    </systemPropertyVariable>
+                        <base.url>https://otus.ru</base.url>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
