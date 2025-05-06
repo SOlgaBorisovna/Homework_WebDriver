@@ -9,13 +9,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class MainPage extends AbsBasePage {
 
     public MainPage(WebDriver driver) {
-        super(driver, "/");
+        super(driver);
     }
-
-//    public void clickAllEventsButton() {
-//        WebElement button = driver.findElement(By.cssSelector("h2-a[href*=''events/near]"));
-//        button.click();
-//    }
 
     public void inputTextLabel() {
         WebElement label = driver.findElement(By.id("textInput"));
@@ -56,13 +51,4 @@ public class MainPage extends AbsBasePage {
 
     }
 }
-
-
-//public void pageTitleShouldBeSameAs(String title) {
-//    WebElement titleElement = driver.findElement(By.cssSelector(""));
-//
-//    assertThat(titleElement.getText())
-//            .as("Title of page should be {}", title)
-//            .isEqualto(title);
-//}
 
